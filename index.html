@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS Sendiri -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        /* font-family: 'Anton', sans-serif; */
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Public+Sans:wght@700&family=Roboto:wght@400;700&display=swap');
+        </style>
+    <title>Website Absen</title>
+  </head>
+  <body>
+    <div class="bulet"></div>
+      <!-- bagian batas waktu -->
+    <section class="atas  text-center">
+        <div>
+            <p class="bataswaktu"> BATAS WAKTU ABSEN</p>
+            <p id="waktu" class="display-4"></p>
+        </div>
+    </section>
+        <!-- akhir -->
+    <div class="container">
+        <div class="form-row">
+            <div class="col-md-6 kiri">
+                <!-- <img src="image/undraw_election_day_w842 1.png" alt=""> -->
+            </div>
+
+            <div class="col-md-6">
+                <div class="formabsen">
+                    <h1 class="absen text-center">FORM ABSEN</h1>
+                    <hr>
+                    <br>
+                </div>
+            <form action="hasil.php" class="was-validated" name="forminput" method="post" FORM ENCTYPE="multipart/form-data" >
+
+                <h5>Nama :</h5>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Anda" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+                <div class="invalid-feedback"></div>
+            <br>
+                <h5>NIM :</h5>
+                <input type="text" class="form-control" id="nim" name="nim" placeholder="Masukkan NIM Anda" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+                <div class="invalid-feedback"></div>
+            <br>
+                <h5>Keterangan</h5>
+                <div class="form-check form-check-inline cekhadir">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" style="height:25px; width:25px; " id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Hadir</label>
+                  </div>
+                <div class="form-check form-check-inline cekhadir">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" style="height:25px; width:25px; " id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Tidak Hadir</label>
+                  </div>
+            <br>
+            <br>
+                <h5>Alasan :</h5>
+                <textarea class="form-control" id="exampleFormControlTextarea1"  id="alasan" name="alasan" placeholder="Berikan Alasan Kalau Anda Tidak Hadir" rows="3" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
+                <div class="invalid-feedback"></div>
+            <br>
+                <button class="btn btn-primary"  class="text-right" style="float: right;"name="submit" type="submit">KIRIM</button>
+            <br>
+            </form>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+<footer class="footer">
+<!-- <img src="image/footer asli.png" alt="" >   -->
+<div class="text-center textfooter">
+    <br>
+    <br>
+    © 2020 Copyright: 
+    <a class="text-dark" href="dadylon">DadyLON</a>
+    <br>
+  </div>
+</footer>
+<!-- akhirr footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="batas.js"></script>
+</body>
+</html>

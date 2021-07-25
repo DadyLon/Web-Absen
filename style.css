@@ -1,0 +1,86 @@
+.bulet{
+    background: url(image/dinavbar.png);
+    background-size: cover;
+    position: absolute;
+    height: 18rem;
+    width: 18rem;
+    z-index: -1;
+    /* background: rgb(0, 47, 255);
+    background: linear-gradient(
+    to right bottom,
+    rgba(0, 47, 255, 0.8),
+    rgba(0, 140, 255, 0.3)
+  );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%; */
+    left: 1px;
+    top: 1px;
+}
+.atas{
+    padding-top: 20px;
+    font-family: 'Public Sans', sans-serif;
+    font-style: bold;
+    color: #180DAE;
+}
+.bataswaktu{
+    font-size: 40px;
+}
+.display-4{
+    font-size: 96;
+    font-family:'Anton', sans-serif;
+}
+.kiri{
+    background-image: url(image/undraw_election_day_w842\ 1.png);
+    background-repeat: no-repeat;
+    /* margin-top: 80px; */
+}
+.formabsen{
+    font-family: 'Roboto', sans-serif; 
+}
+.cekhadir{
+    font-size: 20px;
+    color: black;
+}
+.footer{
+    background-image: url(image/footer\ asli.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500;
+}
+.textfooter{
+    font-family: 'Roboto', sans-serif; 
+}
+
+@media (max-width: 575.98px) { 
+
+    .bulet{
+        height: 18rem;
+        width: 18rem;
+        z-index: -1;
+        background: #00FFE0;
+        background-size: cover;
+        background: linear-gradient(
+        to right bottom,
+        rgb(0, 217, 255),
+        rgba(0, 140, 255, 0.3)
+      );
+        height: 15rem;
+        width: 100%;
+        position: absolute;
+        border: none;
+    }
+    .kiri{
+        background: none;
+        /* background-image: url(image/undraw_election_day_w842\ 1.png);
+        background-repeat: no-repeat; */
+        /* margin-top: 80px; */
+    }
+    .footer{
+        background-image: url(image/footerhp.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 500; */
+    }
+}
